@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#84b9b0b0">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/content"
+        android:background="#7d7d7d">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scroll_buttons" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/view_buttons">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_close"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    style="?android:attr/buttonStyleSmall"
+                    android:contentDescription="@string/buttonDescription_close" />
+
+                <ImageButton
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_back"
+                    android:src="@android:drawable/ic_menu_revert"
+                    android:contentDescription="@string/buttonDescription_back" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_up"
+                    android:src="@android:drawable/ic_menu_upload"
+                    style="?android:attr/buttonStyleSmall"
+                    android:contentDescription="@string/buttonDescription_up" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_openInBrowser"
+                    android:src="@android:drawable/ic_menu_share"
+                    style="?android:attr/buttonStyleSmall"
+                    android:contentDescription="@string/buttonDescription_openInBrowser" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.trianguloy.llscript.scriptdoc.views.CustomWebView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/customWebView" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:id="@+id/dragger"
+        android:src="@android:drawable/bottom_bar"
+        android:scaleType="fitXY"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/imageDescription_dragger"
+        android:layout_below="@+id/content" />
+
+</RelativeLayout>

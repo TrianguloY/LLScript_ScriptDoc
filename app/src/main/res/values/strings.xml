@@ -1,0 +1,29 @@
+<resources>
+    <!-- Application generic -->
+    <string name="application_label">ScriptDoc</string>
+
+    <!-- Launcher activity -->
+    <string name="label_description">Long tap any link from lightning\'s script editor and a popup will be shown with its description (internet required)</string>
+    <string name="checkbox_alwaysBeta">Use always the beta-api doc</string>
+    <string name="imageDescription_separator">separator</string>
+    <string name="imageDescription_dragger">dragger</string>
+
+
+    <!-- Webdata messages -->
+    <string name="webData_loading">Loading…</string>
+    <string name="webData_tryInBeta">No function found, trying in api-beta…</string>
+    <string name="webData_notFound_Ppage">Couldn\'t find the function doc\nPage: %s</string>
+    <string name="webData_error_Ppage">There was an error trying to get the page. Make sure you have Internet connection and try again<br></br>Page: %s</string>
+
+
+    <!-- Buttons -->
+    <string name="buttonDescription_close">Close</string>
+    <string name="buttonDescription_up">Up</string>
+    <string name="buttonDescription_openInBrowser">Open in Browser</string>
+    <string name="buttonDescription_back">back</string>
+
+
+    <!-- Unsorted -->
+    <string name="unsorted_separator">_</string>
+
+</resources>

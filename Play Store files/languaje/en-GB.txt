@@ -1,0 +1,32 @@
+_Title_
+ScriptDoc - LLScript
+
+
+
+_Short description_
+A tool created to help writing scripts in Lighting Launcher
+
+
+
+_Complete description_
+Important: This app was designed to be used with Lighting Launcher. If you don't have that launcher this will be useless.
+
+This tool shows a resizable popup at the top of the screen when a link to a script api page is launched, for example when you long click a function in the script editor from Lightning Launcher.
+That popup will show the detailed description of the function or a summary of the class.
+
+Note: Currently you need an active internet connection.
+
+Features:
+- History. You can navigate and go back as desired.
+- Up: You can go easily to the class of the current function or to all classes in the current class's package.
+
+Planned features (not yet):
+- Offline api.
+- Auto closing.
+- Open in browser
+
+
+
+_Changes_
+V 1.0
+Published on Play Store

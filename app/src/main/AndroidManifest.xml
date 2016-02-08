@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trianguloy.llscript.scriptdoc">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/application_label"
+        android:supportsRtl="true">
+
+        <activity android:name="com.trianguloy.llscript.scriptdoc.activities.TransparentIntentReceiver"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="www.lightninglauncher.com"
+                    android:pathPattern="/scripting/reference/api/reference/net/pierrox/lightning_launcher/script/api/.*"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="www.lightninglauncher.com"
+                    android:pathPattern="/scripting/reference/api-beta/reference/net/pierrox/lightning_launcher/script/api/.*"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.trianguloy.llscript.scriptdoc.activities.Launcher"
+            android:theme="@style/Default">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <service
+            android:name="com.trianguloy.llscript.scriptdoc.services.ServiceGetter"
+            android:enabled="true"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>
